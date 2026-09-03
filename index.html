@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - ScratchTopUp | Krystalgraphix</title>
+  <style>
+    :root {
+      --bg-dark: #090d16;
+      --card-bg: rgba(18, 26, 43, 0.6);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent-glow: #6366f1;
+      --cyan-glow: #06b6d4;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      align-items: center;
+      padding: 3rem 1.5rem;
+      position: relative;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    body::before, body::after {
+      content: '';
+      position: absolute;
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      filter: blur(120px);
+      z-index: -1;
+      opacity: 0.3;
+      pointer-events: none;
+    }
+    body::before {
+      background: var(--accent-glow);
+      top: -50px;
+      left: 20%;
+    }
+    body::after {
+      background: var(--cyan-glow);
+      bottom: 50px;
+      right: 20%;
+    }
+
+    .nav-header {
+      width: 100%;
+      max-width: 720px;
+      margin-bottom: 2rem;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .back-btn:hover {
+      color: var(--text-main);
+    }
+
+    .policy-container {
+      width: 100%;
+      max-width: 720px;
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 2.5rem 2rem;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .app-header {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      padding-bottom: 1.75rem;
+      border-bottom: 1px solid var(--card-border);
+      margin-bottom: 2rem;
+    }
+
+    .app-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+      object-fit: cover;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .app-title-group h1 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      background: linear-gradient(180deg, #ffffff 0%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .app-title-group p {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      margin-top: 0.2rem;
+    }
+
+    .content section {
+      margin-bottom: 2rem;
+    }
+
+    .content h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #f1f5f9;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.01em;
+    }
+
+    .content p, .content ul {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .content ul {
+      list-style-type: disc;
+      padding-left: 1.25rem;
+    }
+
+    .content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .content a {
+      color: #818cf8;
+      text-decoration: none;
+    }
+
+    .content a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: auto;
+      padding-top: 3rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav-header">
+    <a href="../" class="back-btn">&#8592; Back to Directory</a>
+  </header>
+
+  <main class="policy-container">
+    <div class="app-header">
+      <img class="app-icon" src="icon.png" alt="ScratchTopUp Icon" onerror="this.src='https://via.placeholder.com/64/121a2b/ffffff?text=ST'">
+      <div class="app-title-group">
+        <h1>ScratchTopUp</h1>
+        <p>Privacy Policy &bull; Last updated: September 2026</p>
+      </div>
+    </div>
+
+    <article class="content">
+      <section>
+        <h2>1. Overview</h2>
+        <p>Krystalgraphix built ScratchTopUp as a free application. This Service is provided by Krystalgraphix at no cost and is intended for use as is.</p>
+        <p>This page informs users regarding policies with the collection, use, and disclosure of personal information for ScratchTopUp users.</p>
+      </section>
+
+      <section>
+        <h2>2. Information Collection and Device Permissions</h2>
+        <p>ScratchTopUp requires access to specific device features to perform airtime scratch card scanning and automated dialer operations:</p>
+        <ul>
+          <li><strong>Camera Access:</strong> Used solely to scan voucher/scratch card numbers in real-time. No camera frames or images are saved or transmitted off your device.</li>
+          <li><strong>Phone/Call State Permission:</strong> Used to initiate USSD code requests directly for mobile top-ups.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. Third-Party Services</h2>
+        <p>The app utilizes third-party services that may collect information used to identify your device:</p>
+        <ul>
+          <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Play Services</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. Contact Us</h2>
+        <p>If you have any questions or suggestions regarding the ScratchTopUp Privacy Policy, contact us at <strong>support@krystalgraphix.com</strong>.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    &copy; Krystalgraphix. All rights reserved.
+  </footer>
+
+</body>
+</html>
